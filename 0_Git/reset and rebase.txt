@@ -1,0 +1,3 @@
+to pull the remote branch and discard the local changes:
+git reset --hard
+==================================================

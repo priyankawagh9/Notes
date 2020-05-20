@@ -1,0 +1,12 @@
+conflict resolution updates after applying stash:
+git reset HEAD [files]
+
+==============================
+if merge conflicts happens on git push:
+	 1. make necessary conflict resolutions steps in normal editor.
+	 2. apply above commands on that files:
+		 git status
+		 git add <file-name>
+		 git commit -m "merge conflicts resolved"
+		 git push
+=================================

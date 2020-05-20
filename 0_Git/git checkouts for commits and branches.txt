@@ -1,0 +1,8 @@
+to checkout some commit:
+	git checkout <commit-id>
+=================================
+to checkout remote branch:
+  git checkout master
+=================================
+checkout feature branches:
+	git checkout feature/feature-branch-name

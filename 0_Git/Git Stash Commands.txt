@@ -1,0 +1,27 @@
+Git stash the changes:
+git stash
+==================================
+save stash with message:
+git stash save “Your stash message”.
+====================================
+git stash should be discarded after applying:
+git pop
+
+apply specific stash and delete that one from list of stashes:
+git stash pop stash@{1}
+====================================
+git stash should be saved for future use after applying:
+git apply
+
+apply specific stash out of list of stashes:
+git stash apply stash@{1}
+===================================
+list all the stashes:
+git stash list
+
+=================================
+delete all the stashes:
+git stash clear
+===============================
+delete specific stash:
+git stash drop stash@{1}

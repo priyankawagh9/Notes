@@ -1,0 +1,4 @@
+#git fetch gets all the changes from remote only but doesn't apply on local
+#git merge applies all the changes fetched from remote to local.
+#git pull fetches all the changes from remote and apply those on local immediately.
+

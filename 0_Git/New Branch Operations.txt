@@ -1,0 +1,21 @@
+creat new branch from master:
+	git branch feature/this-is-feature-branch-name
+	
+========================================
+checkout feature branch:
+	git checkout feature/this-is-feature-branch-name
+=======================================
+merge feature branch into master: get all the commits from feature branch into master:
+
+	git checkout master
+On master branch>	git merge feature/this-is-feature-branch-name
+=================================
+Cherry Pick:
+to merge only specific commit of feature branch into master (Not whole feature branch):
+	
+	1) get commit number which you want to merge from feature from list shown by above command:
+		git log --oneline
+	
+	2) switch to master branch now and do steps of merging the specific commit from feature into master (as cherry-pick):
+		git checkout master
+		git cherry-pick commit-number-which-needs-to-be-merged-into-master

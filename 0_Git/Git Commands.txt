@@ -1,0 +1,82 @@
+check existing ssh keys on pc:
+ls -al ~/.ssh
+=================================================
+Paste the text below, substituting in your GitHub email address.
+
+$ ssh-keygen -t rsa -b 4096 -C "sonar.priyanka9@gmail.com"
+====================================================
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+===================================================
+
+…or create a new repository on the command line
+echo "# sampleGitRepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:priyankawagh9/sampleGitRepo.git
+git push -u origin master
+===================================================
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:priyankawagh9/sampleGitRepo.git
+git push -u origin master
+=====================================================
+
+Git clone:
+git clone ssh/http_git_repo_url.git
+=====================================================
+
+Git Status: what are changes i have made on git branch different from remote repo:
+git status
+======================================================
+
+Git commit history on current branch: 
+	git log 
+		OR
+	git log --pretty=oneline
+		OR
+	git log --oneline
+======================================================
+discard local changes and reset the local branch to the same state of remote branch:
+git reset --hard
+
+===========================================================
+difference between local and remote files:
+git diff origin/master
+=============================================
+commit all files:
+git add 
+git commit -m "commit message-here"
+git push
+===========================================
+commit specific file:
+git add [some files]       # add [some files] to staging area
+git commit [some files] -m "commit message-here"
+git push
+======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
